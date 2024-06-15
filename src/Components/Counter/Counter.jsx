@@ -5,7 +5,7 @@ export class Counter extends React.Component{
     constructor(){
         super();
        // this.contador = 0;
-       this.state = {contador: 0};
+       this.state = {contador: 0, name: ''};
     }
 
     render(){
@@ -20,6 +20,14 @@ export class Counter extends React.Component{
                         this.setState({contador: this.state.contador - 1})
                     }} >Diminuir</button>
                 </div>
+
+                <form action="">
+                    <label htmlFor="">nome</label>
+                    <input type="text" value={this.state.name} onChange={(event)=> {
+                        this.setState({name: event.target.value})
+                    }} />
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         );
     }
