@@ -11,3 +11,15 @@ body {
 a {
     text-decoration: none;
 }
+section#articles img {
+    width: 150px;
+    height: 150px;
+}
+section#articles {
+    margin: 8rem auto;
+    padding: 0 2rem;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
